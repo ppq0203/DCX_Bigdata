@@ -1,0 +1,24 @@
+package test.employee;
+
+public class Engineer extends Employee{
+	String dept;
+	
+	/**
+	 * @param no
+	 * @param name
+	 * @param phone
+	 * @param pay
+	 * @param dept
+	 */
+	public Engineer(String no, String name, String phone, int pay, String dept) {
+		super(no, name, phone, pay);
+		this.dept = dept;
+	}
+
+	@Override
+	public int getPay()
+	{
+		int p = super.getPay();
+		return p;
+	}
+}

@@ -1,0 +1,13 @@
+package problem;
+/**
+ * 중복이 없이 숫자를 뽑는 로또 프로그램을 만드시오.
+ */
+
+public class Problem18 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

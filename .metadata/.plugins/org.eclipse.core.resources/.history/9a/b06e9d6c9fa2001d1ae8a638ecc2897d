@@ -1,0 +1,33 @@
+package test.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import test.appoint.Appoint;
+import test.date.Date;
+
+public class TestCollection {
+
+	public static void main(String[] args) {
+		List<Date> date = new ArrayList<Date>();
+//		Date[] date = new Date[10];
+		for (int i = 0; i < date.size(); i++) {
+			double random = Math.random(); // 0.0 <= x < 1.0, psudo random
+			int randInt = (int) (random* 100); // 0 ~ 99
+			if (randInt%2 == 0) {
+				date.add(new Date());
+			} else {
+				date.add(new Appoint());
+			}
+		}// for end
+		for (Date date2 : date) {
+			date2.print();
+			// class cast는 꼭!!! instanceof와 함께...
+			if (date2 instanceof Appoint) {
+//				Appoint app = (Appoint) date2;
+//				System.out.println(app.getSubject());
+			}
+		}
+	}
+
+}

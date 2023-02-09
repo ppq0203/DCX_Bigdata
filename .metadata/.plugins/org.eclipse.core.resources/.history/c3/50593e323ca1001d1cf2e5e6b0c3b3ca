@@ -1,0 +1,14 @@
+package test.employee;
+
+public class Employee {
+	String no;
+	String name;
+	String phone;
+	int pay;
+	
+	@Override
+	public int getPay()
+	{
+		return 0;
+	}
+}

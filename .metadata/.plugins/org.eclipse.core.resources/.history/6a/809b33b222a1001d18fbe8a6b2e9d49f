@@ -1,0 +1,35 @@
+package problem;
+/**
+ * 중복이 없이 숫자를 뽑는 로또 프로그램을 만드시오.
+ */
+import java.util.Random;
+
+public class Problem18 {
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		int randomNum = 0;
+		int[] lotto = new int[6];
+		boolean overlap = true;	//중복체크 변수
+		for(int i = 0; i < 6; i++)		//6번 반복
+		{
+			overlap = true;
+			while(overlap)
+			{
+				overlap = false;
+				randomNum = random.nextInt(6);
+				for(int j = 0; j < i; ++j)
+				{
+					if(lotto[j] == randomNum)
+						overlap = true;
+				}
+			}
+			lotto[i] = randomNum;
+		}
+		for(int i = 0; i < 6; ++i)
+		{
+			System.out.println("행운의숫자 : " + lotto[i]);
+		}
+	}
+
+}

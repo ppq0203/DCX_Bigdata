@@ -1,0 +1,44 @@
+package test.employee;
+
+public class Employee {
+	private String no;
+	private String name;
+	private String phone;
+	private int pay;
+	
+	/**
+	 * @param no
+	 * @param name
+	 * @param phone
+	 * @param pay
+	 */
+	public Employee(String no, String name, String phone, int pay) {
+		this.no = no;
+		this.name = name;
+		this.phone = phone;
+		this.pay = pay;
+	}
+	
+
+	@Override
+	public String toString() {
+		return "Employee [no=" + no + ", name=" + name + ", phone=" + phone + ", pay=" + pay + "]";
+	}
+
+
+	public int getPay() {
+		return pay;
+	}
+
+	public String getNo() {
+		return no;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+}

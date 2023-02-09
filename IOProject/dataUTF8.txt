@@ -1,0 +1,5 @@
+디스코드에 화면공유용 줌링크 게시해두었습니다!
+
+WEB 응용 -> App -> standalone -> client/server
+HTTP <- .....FTP/SMTP/GOPER/...
+TCP / IP :  system, host, computer, node

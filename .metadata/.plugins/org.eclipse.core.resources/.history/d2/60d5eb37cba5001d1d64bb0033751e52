@@ -1,0 +1,28 @@
+package test.io;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.math.BigDecimal;
+
+public class TestIO {
+
+	public static void main(String[] args) throws IOException {
+		FileOutputStream out = new FileOutputStream("result.txt");	// not exist file exception ( FileNotFoundException )
+		String data = "hello, \n홍길동";
+		byte[] buffer = data.getBytes();
+		out.write(buffer);		// can't write exception ( IOException )
+		out.flush();		// data transmission in OutputStream to destination
+		out.close();		// close Stream order function
+		
+		File file = new File("result.txt");
+		FileInputStream in = new FileInputStream(file);
+		long length = file.length();		// BigDecimal (*)
+		byte[] buffer1 = new byte[(int)length];
+		in.read(buffer1);
+		System.out.println(buffer1.toString());
+	}
+
+}

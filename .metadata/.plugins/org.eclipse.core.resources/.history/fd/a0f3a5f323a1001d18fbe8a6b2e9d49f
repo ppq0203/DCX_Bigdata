@@ -1,0 +1,14 @@
+package problem;
+/**
+ * 사용자에게 입력받아 배열의 인덱스의 수 만큼 별을 출력해보세요.
+ */
+import java.util.Scanner;	//Scanner클래스를 사용하기 위해 import
+
+public class Bonus04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);	//input을 쉽게받기위해 사용하는 자바클래스
+
+	}
+
+}

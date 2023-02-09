@@ -1,0 +1,32 @@
+package test.socket;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class TestServerSocket {
+
+	public static void main(String[] args) throws IOException {
+		int port =5000;
+		ServerSocket server = new ServerSocket(port);
+		Socket service = server.accept();
+		System.out.println("finish run server port=" + port);
+		InputStream in = service.getInputStream();
+		OutputStream out = service.getOutputStream();
+		
+		byte[] buffer = new byte[1024];
+		in.read(buffer);
+		
+		System.out.println(new String(buffer));
+		String response = "hi";
+		out.write(response.getBytes());
+		
+		in.close();
+		out.close();
+		service.close();
+		server.close();
+	}
+
+}

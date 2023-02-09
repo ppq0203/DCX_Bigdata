@@ -1,0 +1,28 @@
+package test.io;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class FileManager {
+	File file;
+	FileOutputStream out;
+	FileInputStream in;
+	
+	public FileManager(String fileAddress)
+	{
+		file = new File(fileAddress);
+		out = new FileOutputStream(file);
+		in = new FileInputStream(file);
+	}
+	
+	public void readFile()
+	{
+		new File
+	}
+	
+	public void writeFile()
+	{
+		
+	}
+}

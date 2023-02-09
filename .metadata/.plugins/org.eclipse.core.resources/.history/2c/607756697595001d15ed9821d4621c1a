@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="UTF-8"%>
+ <%@page import="java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<%!
+List<String> list = new ArrayList<String>(); 
+%>
+<%
+Integer count = (Integer)session.getAttribute("BBS");
+if(list.size() != count);
+%>
+<body>
+    <table border="1">
+        <tr>
+            <td>번호</td>
+            <td>제목</td>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td></td>
+        </tr>
+    </table>
+    <a href="bbsInput.html">글쓰기</a>
+</body>
+</html>

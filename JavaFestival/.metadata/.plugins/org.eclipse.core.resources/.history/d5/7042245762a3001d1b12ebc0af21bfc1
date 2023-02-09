@@ -1,0 +1,11 @@
+package festival.algorithm;
+
+public class Prob10 {
+
+	public static void main(String[] args) {
+		int[] list = new int[8];
+		
+		System.out.println(Math.random());
+	}
+
+}

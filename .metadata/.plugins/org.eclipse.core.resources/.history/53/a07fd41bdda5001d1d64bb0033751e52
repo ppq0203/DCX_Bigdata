@@ -1,0 +1,27 @@
+package test.io;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileManager {
+	
+	public void writeFile(String name, String data) throws IOException
+	{
+		FileOutputStream out = new FileOutputStream(name);	// not exist file exception ( FileNotFoundException )
+		byte[] buffer = data.getBytes();
+		out.write(buffer);		// can't write exception ( IOException )
+		out.flush();		// data transmission in OutputStream to destination
+		out.close();		// close Stream order function
+	}
+	public String readFile(String name) throws IOException
+	{
+		File file = new File(name);
+		FileInputStream in = new FileInputStream(file);
+		long length = file.length();		// BigDecimal (*)
+		byte[] buffer1 = new byte[(int)length];
+		in.read(buffer1);
+		return new String(buffer1);
+	}
+}

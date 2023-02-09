@@ -1,0 +1,18 @@
+package test.employee;
+
+public class Sales extends Employee{
+	int sales;
+
+	/**
+	 * @param no
+	 * @param name
+	 * @param phone
+	 * @param pay
+	 * @param sales
+	 */
+	public Sales(String no, String name, String phone, int pay, int sales) {
+		super(no, name, phone, pay);
+		this.sales = sales;
+	}
+	
+}

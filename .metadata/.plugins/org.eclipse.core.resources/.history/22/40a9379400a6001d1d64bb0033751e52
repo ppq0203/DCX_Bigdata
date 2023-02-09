@@ -1,0 +1,49 @@
+package test.employee;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class RWEmpData {
+	
+	public HashMap<String, Employee> readEmps()
+	{
+		HashMap<String, Employee> hashMap;
+		try {
+			FileInputStream fileStream = new FileInputStream("employees");
+			ObjectInputStream objectInputStream = new ObjectInputStream(fileStream);
+			Object object = objectInputStream.readObject();
+			objectInputStream.close();
+			hashMap = (HashMap<String, Employee>)object;
+//			
+		} catch (IOException e) {
+			hashMap = new HashMap<String ,Employee>();
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			hashMap = new HashMap<String ,Employee>();
+			e.printStackTrace();
+		}
+		
+//		Iterator<String> it = hashMap.keySet().iterator();
+//		while(it.hasNext()){  // 맵키가 존재할경우
+//			String key = it.next();  // 맵키를 꺼냄
+//			Employee value = (Employee)hashMap.get(key);  // 키에 해당되는 객체 꺼냄
+//			System.out.println(key + "->" + value);
+//		}
+		return hashMap;
+	}
+	
+	public void writeEmp(Employee emp) throws IOException, ClassNotFoundException
+	{
+		HashMap<String, Employee> emps = readEmps();
+		emps.put(emp.getNo(), emp);
+		FileOutputStream fileStream = new FileOutputStream("employees");
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileStream);
+		objectOutputStream.writeObject(emps);
+		objectOutputStream.close();
+	}
+}

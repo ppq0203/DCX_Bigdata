@@ -1,0 +1,10 @@
+package test.employee;
+
+public class Employee {
+	String no;
+	String name;
+	String phone;
+	int pay;
+	
+	public int getPay() return 0;
+}

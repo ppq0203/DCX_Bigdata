@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;SocketInternet&apos;&#x0D;&#x0A;- Original project: &apos;SocketInternet&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     socket.ChatClientObject.java&#x0D;&#x0A;     socket.ChatServerObject.java&#x0D;&#x0A;     socket.InfoDTO.java" description="Delete elements" element1="/src&lt;socket{ChatServerObject.java" element2="/src&lt;socket{ChatClientObject.java" element3="/src&lt;socket{InfoDTO.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1675746210462" subPackages="false" version="1.0"/>
+</session>

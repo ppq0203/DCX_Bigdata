@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="EUC-KR" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+<title>Insert title here</title>
+</head>
+<body>
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href = "home.html"  target = "rightFrame"> [홈]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = "login.html" target = "rightFrame"> [로그인]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = "./emp/empMenu.html" target = "leftFrame" > [직원관리]</a>
+</body>
+</html>

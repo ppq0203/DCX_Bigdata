@@ -1,0 +1,57 @@
+<%@page import="java.util.HashMap,
+test.employee.Employee,
+test.employee.Manager,
+test.employee.Engineer,
+test.employee.Sales"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" %>
+<jsp:useBean id="empList" class="java.util.HashMap" scope="application" />
+<jsp:setProperty property="*" name="emp" />
+<!DOCTYPE html>
+<html>
+<% 
+	Employee emp = null;
+	String position = request.getParameter("position");
+	switch(position.charAt(0))
+	{
+		case 'M':
+			emp = new Manager();
+			break;
+		case 'E':
+			emp = new Engineer();
+			break;
+		case 'S':
+			emp = new Sales();
+			break;
+		default :
+			emp = new Employee();
+			break;
+	}
+%>
+<jsp:setProperty property="*" name="emp" />
+<%
+	
+	System.out.println("postEmp.jsp after action\n" + emp);
+	empList.put(emp.getNo(), emp); 
+	System.out.println("-----------start :: empList::postEmp.jsp---------------");
+	for(Object o: empList.values())
+	{	System.out.println(o);
+	}
+	System.out.println("-----------end :: empList::postEmp.jsp---------------");
+%>
+
+<head><meta charset="UTF-8">
+<title>방명록 게시판</title>
+</head>
+<body>
+<%
+//emp.getId().equals("root")
+
+%>
+
+[<jsp:getProperty property="name" name="emp"/>] 직원등록이 완료되었습니다.<br>
+총직원은 [<%=empList.size() %>] 명입니다.<br>
+
+<a href="listEmpHashMap.jsp">게시판가기</a>
+</body>
+</html>

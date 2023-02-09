@@ -1,0 +1,18 @@
+package test.io;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class TestIO {
+
+	public static void main(String[] args) throws IOException {
+		FileOutputStream out = new FileOutputStream("result.txt");	// not exist file exception ( FileNotFoundException )
+		String data = "hello, \n홍길동";
+		byte[] buffer = data.getBytes();
+		out.write(buffer);		// can't write exception ( IOException )
+		out.flush();
+		out.close();
+	}
+
+}

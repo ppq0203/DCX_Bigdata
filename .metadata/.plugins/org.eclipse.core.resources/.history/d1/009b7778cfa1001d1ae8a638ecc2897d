@@ -1,0 +1,12 @@
+package test.api;
+
+public class TestAPI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer i;
+		int e;
+		e = i.parseInt("22");
+	}
+
+}

@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<jsp:useBean id="userInfo" class="bbs.UserInfo" scope="application"/>
+<jsp:setProperty property="id" name="userInfo" param="ID"/>
+<jsp:setProperty property="pwd" name="userInfo" param="PWD"/>
+<jsp:setProperty property="name" name="userInfo" param="NAME"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+out.println("ID: "+ userInfo.getId());
+out.println("ID: "+ request.getParameter("ID"));
+out.println("PWD: "+ userInfo.getPwd());
+out.println("NAME: "+ userInfo.getName());
+%>
+회원가입완료<br />
+<a href="login.jsp">로그인하러가기</a>
+</body>
+</html>

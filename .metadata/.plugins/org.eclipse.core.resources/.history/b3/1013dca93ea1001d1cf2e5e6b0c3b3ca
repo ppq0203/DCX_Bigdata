@@ -1,0 +1,6 @@
+package test.employee;
+
+public class Sales extends Employee{
+	int sales;
+	
+}

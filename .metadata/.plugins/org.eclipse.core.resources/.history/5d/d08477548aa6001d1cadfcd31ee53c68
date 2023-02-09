@@ -1,0 +1,9 @@
+package test.socket;
+
+import java.net.Socket;
+
+public class TestSocket {
+	private String host = null;
+	private int port = null;
+	Socket client = new Socket(host, port);
+}

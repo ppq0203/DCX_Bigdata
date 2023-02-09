@@ -1,0 +1,40 @@
+package test.socket;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class TestSocket {
+	public static void main(String[] args) throws UnknownHostException, IOException
+	{
+		String ip = "127.0.0.1";
+		int port = 5000;
+		Socketclient = new Socket(ip, port);
+		InputStream in = client.getInputStream();
+		WriteThread wt = new WriteThread(client);
+		wt.start();
+//		OutputStream out = client.getOutputStream();
+//		String ip = "192.168.1.83";
+//		ip = "www.naver.com";
+//		port = 80;
+//		String request;
+		
+		while(true)
+		{
+//			System.out.print("input > ");
+//			request = sc.nextLine();
+//			out.write(request.getBytes());
+			byte[] buffer = new byte[1024];
+			in.read(buffer);
+			System.out.println(new String(buffer));
+			if((new String(buffer)).equals("1"));
+				break;
+		}
+
+
+//		out.close();
+		in.close();
+		client.close();
+	}
+}

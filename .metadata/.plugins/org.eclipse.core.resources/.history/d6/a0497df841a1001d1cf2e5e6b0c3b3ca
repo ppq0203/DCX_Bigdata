@@ -1,0 +1,20 @@
+package test.employee;
+
+public class Main {
+
+	public static void main(String[] args) {		
+		Employee[] allEmList = new Employee[10];
+		int i = 0;
+		allEmList[i++] = new Engineer("noe1", "e1", "e1-000-000", 5000, "p1");
+		allEmList[i++] = new Engineer("noe2", "e2", "e2-000-000", 5000, "p1");
+		allEmList[i++] = new Engineer("noe3", "e3", "e3-000-000", 5000, "p1");
+		allEmList[i++] = new Engineer("noe4", "e4", "e4-000-000", 5000, "p1");
+		allEmList[i++] = new Engineer("noe5", "e5", "e5-000-000", 5000, "p2");
+		allEmList[i++] = new Engineer("noe6", "e6", "e6-000-000", 5000, "p2");
+		allEmList[i++] = new Manager("nom1", "m1", "m1-000-000", 10000, "p1", allEmList);
+		allEmList[i++] = new Manager("nom2", "m2", "m2-000-000", 10000, "p2", allEmList);
+		allEmList[i++] = new Sales("nos1", "s1", "s1-000-000", 4000, 1000000);
+		allEmList[i++] = new Sales("nos2", "s2", "s2-000-000", 4000, 800000);
+	}
+
+}
