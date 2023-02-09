@@ -1,15 +1,11 @@
 INDEX VERSION 1.4+C:\Users\a\Desktop\Java2019_12\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-889139937.index
-4286950383.index
-1804293634.index
-360730008.index
+1816235177.index
+64580402.index
+3451361047.index
 1315230832.index
-2659812205.index
-478963348.index
-15537870.index
+3520193712.index
+494610186.index
+889139937.index
+2963533703.index
 1239476283.index
-2196304695.index
-3799825941.index
-4126131105.index
-2011833944.index
-4068607928.index
+3263964712.index

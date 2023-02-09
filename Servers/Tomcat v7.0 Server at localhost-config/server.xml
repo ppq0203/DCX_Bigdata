@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-		<Context docBase="WorkProjectSln4" path="/WorkProjectSln4" reloadable="true" source="org.eclipse.jst.jee.server:WorkProjectSln4"/><Context docBase="HTMLAssignment" path="/html" reloadable="true" source="org.eclipse.jst.jee.server:HTMLAssignment"/><Context docBase="WorkProject1_ver5" path="/WorkProject1_ver5" reloadable="true" source="org.eclipse.jst.jee.server:WorkProject1_ver5"/><Context docBase="WorkProjectSln3_2" path="/WorkProjectSln3_2" reloadable="true" source="org.eclipse.jst.jee.server:WorkProjectSln3_2"/></Host>
+		<Context docBase="HTMLAssignment" path="/html" reloadable="true" source="org.eclipse.jst.jee.server:HTMLAssignment"/><Context docBase="WorkProjectSln_My" path="/WorkProjectSln_My" reloadable="true" source="org.eclipse.jst.jee.server:WorkProjectSln_My"/><Context docBase="WorkProject" path="/WorkProject" reloadable="true" source="org.eclipse.jst.jee.server:WorkProject"/><Context docBase="WorkProjectSln_Class" path="/WorkProjectSln_Class" reloadable="true" source="org.eclipse.jst.jee.server:WorkProjectSln_Class"/></Host>
     </Engine>
   </Service>
 </Server>

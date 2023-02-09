@@ -12,9 +12,12 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\a\Desktop\Java2019_12\TestProject"/>
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\a\Desktop\20230208_jikwon.zip"/>
+			<item value="C:\Users\a\Desktop\20230208.zip"/>
 			<item value="C:\Users\a\Desktop\20230206_work.zip"/>
 			<item value="C:\Users\a\Desktop\20230202_work.zip"/>
 			<item value="C:\Users\a\Desktop\20230202.zip"/>
@@ -33,7 +36,6 @@
 			<item value="C:\Users\a\Desktop\20230119_work1.zip"/>
 			<item value="C:\Users\a\Desktop\20230117_work1.zip"/>
 			<item value="C:\Users\a\Desktop\20221230_조건문.zip"/>
-			<item value="C:\Users\a\Desktop\20221230.zip"/>
 		</list>
 	</section>
 	<section name="SmartImportWizard">

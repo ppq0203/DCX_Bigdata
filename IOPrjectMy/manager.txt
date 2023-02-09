@@ -1,2 +1,0 @@
-manager.txt
-read and write
