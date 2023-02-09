@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy package &apos;test.date&apos; to &apos;CollectionProject/src&apos;&#x0D;&#x0A;- Original project: &apos;P_2023_01_31_work_DateProject&apos;&#x0D;&#x0A;- Destination element: &apos;CollectionProject/src&apos;&#x0D;&#x0A;- Original element: &apos;P_2023_01_31_work_DateProject/src/test.date&apos;" description="Copy package" destination="=CollectionProject/src" element1="/src&lt;test.date" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1675303018004" version="1.0"/>
-</session>

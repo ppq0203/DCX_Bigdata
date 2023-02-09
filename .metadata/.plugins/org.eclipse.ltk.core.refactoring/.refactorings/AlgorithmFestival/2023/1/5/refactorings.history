@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;problem.Program16&apos; to &apos;Problem16&apos;&#x0D;&#x0A;- Original project: &apos;AlgorithmFestival&apos;&#x0D;&#x0A;- Original element: &apos;problem.Program16&apos;&#x0D;&#x0A;- Renamed element: &apos;problem.Problem16&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Program16&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;problem{Program16.java[Program16" matchStrategy="1" name="Problem16" qualified="false" references="true" similarDeclarations="false" stamp="1675133741176" textual="false" version="1.0"/>
-</session>
